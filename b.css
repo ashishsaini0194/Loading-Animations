@@ -1,0 +1,60 @@
+#mainDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#cube {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    animation: bounce 0.8s ease 0s infinite;
+    /* display: inline-block; */
+    /* box-shadow: 5px 10px 8px #888888; */
+    /* z-index: 1; */
+}
+
+#Div2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* box-shadow: 5px 10px 8px #888888; */
+    position: fixed;
+    animation: boom 0.8s ease-in-out 0s infinite;
+    display: inline-block;
+    background-color: #a1a1a1;
+    /* z-index: 3; */
+}
+
+@keyframes boom{
+    0%{
+        transform: translateY(15px) rotateX(80deg) scale(0,0);
+    }
+    50%{
+        transform: translateY(15px) rotateX(80deg) scale(2,2);
+    }
+    100%{
+        transform: translateY(15px) rotateX(80deg) scale(0,0);
+    }
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0px) rotateX(65deg);
+    }
+    10% {
+        transform: rotateX(50deg);
+    }
+    50%{
+        transform: translateY(-150px) rotateX(0deg);
+    }
+    90% {
+        transform: rotateX(50deg); ;
+    }
+    100% {
+        transform: translateY(0px) rotateX(65deg); ;
+    }
+}

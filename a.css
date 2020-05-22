@@ -1,0 +1,50 @@
+*{
+    overflow: hidden;
+}
+#mainDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dAll {
+    background-color: black;
+    width:10px;
+    height:60px;
+    float: left;
+    margin-right:3px;
+    animation-name: ashish;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: ; */
+}
+
+@keyframes ashish{
+    0%,50%,100%{
+        transform: scaleY(0.5)
+    }
+    20%{
+        transform: scaleY(1.2);
+    }
+}
+
+#d2{
+
+    animation-delay: -1.1s; 
+}
+#d3{
+
+    animation-delay: -1.0s;
+}
+#d4{
+
+    animation-delay: -0.9s;
+}
+#d5{
+
+    animation-delay: -0.8s;
+}
